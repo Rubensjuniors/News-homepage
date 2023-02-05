@@ -1,0 +1,49 @@
+main{
+  padding: 0 20px 20px 20px;
+}
+#corpo{
+  display: grid;
+  grid-template-areas: 
+  "foto foto new"
+  "titulo read new"
+  "top top top";
+  gap: 32px;
+}
+
+.introducao-img-pricipal{
+  grid-area: foto;
+}
+.titulo-principal{
+  grid-area: titulo;
+}
+.read-more{
+  grid-area: read;
+}
+.new{
+  grid-area: new;
+}
+.top-tres{
+  grid-area: top;
+}
+
+@media(max-width:1100px){
+  #corpo{
+    grid-template-areas: 
+    "foto foto foto"
+    "titulo read ."
+    "top new new"
+;
+  }
+}
+@media(max-width:730px){
+  #corpo{
+    grid-template-areas: 
+    "foto"
+    "titulo"
+    "read"
+    "new"
+    "top"
+
+    ;
+  }
+}

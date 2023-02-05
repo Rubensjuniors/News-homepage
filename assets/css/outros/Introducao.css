@@ -1,0 +1,41 @@
+
+
+.titulo-principal{
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.read-more{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+.read-more p{
+  font-family: "Inter";
+  font-size: 1rem;
+  line-height: 30px;
+  color: hsl(236, 13%, 42%);
+}
+.read-more a{
+  font-family: "inter";
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 5px;
+  padding: 15px 30px;
+  background: #EF5E51;
+}
+@media(max-width:730px){
+  .titulo-principal{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .read-more{
+    text-align: center;
+  }
+  .read-more a{
+    align-self: center;
+  }
+}

@@ -1,0 +1,111 @@
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 45px 20px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: "Inter";
+  color: hsl(236, 13%, 42%);
+}
+.menu li a{
+  padding: 15px 10px;
+}
+@media(max-width:730px){
+  #header {
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+
+  #nav {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 100vh ;
+    background: #ffffff;
+    top: 70px;
+    right: -250px;
+    z-index: 1000px;
+  }
+  #header.active #nav {
+    display: block;
+    right: 0px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 15px;
+  }
+  #header.active .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 15px;
+    padding: 15px;
+  }
+  #features,
+  #company {
+    display: block;
+  }
+  #features::after,
+  #company::after {
+    top: 15px;
+  }
+  #features:hover:after,
+  #company:hover::after {
+    transform: rotate(0deg);
+    transition: 0.3s ease;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+
+  #login {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #header.active #hamburger {
+    border-top-color: transparent;
+  }
+  #header.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #header.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  
+ 
+}

@@ -1,0 +1,45 @@
+.new{
+  background:#00001A ;
+  padding:30px 20px;
+
+}
+.new h2{
+font-family: "inter";
+font-size: 2.5rem;
+margin-bottom: 40px;
+color: #E9A953;
+}
+
+.new-lista{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  color: #ffffff;
+  
+}
+.new-lista div{
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+.new-lista div:last-child{
+  border-bottom: none;
+}
+
+.new-lista h3{
+  font-family: "Inter";
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.new-lista p{
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: hsl(236, 13%, 42%);
+}
+.new-lista div p{
+margin-bottom: 32px;
+}
+
+

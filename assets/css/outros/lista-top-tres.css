@@ -1,0 +1,39 @@
+.top-tres-lista{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center ;
+  justify-content: center;
+  gap: 32px;
+
+}
+
+.top-tres-lista li{
+  flex: 1;
+  min-width: 330px;
+  justify-self: center;
+  display: flex;
+  gap: 14px;
+
+}
+
+.item-conteudo{
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-conteudo span{
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: 700;
+  color: #D6D6D7;
+}
+
+.item-conteudo h3{
+  font-family: "Inter";
+}
+.item-conteudo p{
+  font-family: "inter";
+  color: hsl(236, 13%, 42%);
+}
